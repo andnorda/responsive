@@ -158,4 +158,20 @@ footer {
 footer .functions {
   text-align: center;
 }
+.login {
+  border-color: #e7e7e7;
+  border-width: 1px;
+  border-style: solid;
+  padding: 20px;
+  width: 400px;
+  width: 300px;
+  float: right;
+}
+.information {
+  padding: 20px;
+}
+.information .link {
+  float: right;
+  padding-right: 20px;
+}
 /*# sourceMappingURL=main.css.map */
