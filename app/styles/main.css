@@ -147,4 +147,15 @@ a:focus {
   font-family: 'MuseoSansRounded900';
   src: url('../fonts/Museo Sans Rounded/exljbris - MuseoSansRounded-900.otf') format('opentype');
 }
+footer {
+  color: white;
+  background-color: #676767;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+footer .functions {
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */
