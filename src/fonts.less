@@ -1,0 +1,184 @@
+@heading-color: @dark-blue;
+@heading-font: 'MuseoSansRounded700';
+
+html,
+body {
+	font-family: 'MuseoSans300';
+	color: @dark-gray;
+	font-size: 80%;
+	line-height: 1;
+	text-align: center;
+}
+
+@media only screen and (min-width: @phone-width) {
+	html {
+		font-size: 100%;	
+	}
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: @heading-font;
+	color: @heading-color;
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 3.75rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 1.875rem;
+	
+	a {
+		font-family: 'MuseoSansRounded500';
+		color: @light-blue;
+		font-size: 1.5rem;
+		text-decoration: none;
+		
+		&:hover,
+		&:focus {
+			color: @blue;
+			text-decoration: none;
+		}
+	}
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+p {
+	font-family: 'MuseoSans300';
+	color: @dark-gray;
+	font-size: 1.125rem;
+	line-height: 1.67;
+
+	&.lead, &.main-lead {
+		font-family: 'MuseoSansRounded500';
+		color: @dark-blue;
+		font-size: 1.25rem;
+		line-height: 1.2;
+	}
+
+	&.main-lead {
+		font-size: 1.5rem;
+		line-height: 1.5;
+	}
+	
+	&.small {
+		font-family: 'MuseoSans500';
+		font-size: 0.875rem;
+		line-height: 1.2;
+		
+	}
+}
+
+a {
+	font-family: 'MuseoSans300';
+	color: @light-blue;
+	font-size: 1.125rem;
+	line-height: 1.67;
+	text-decoration: underline;
+	
+	&:hover,
+	&:focus {
+		color: @blue;
+	}
+}
+
+.big-number {
+	font-family: 'MuseoSansRounded700';
+	color: @dark-blue;
+	font-size: 9rem;
+	line-height: 1.2;
+}
+
+.medium-number {
+	font-family: 'MuseoSansRounded700';
+	color: @dark-blue;
+	font-size: 3.75rem;
+	line-height: 1.2;
+}
+
+@font-face {
+	font-family: 'MuseoSans100';
+	src: url('../fonts/Museo Sans/MuseoSans-100.otf') format('opentype');
+}
+@font-face {
+	font-family: 'MuseoSans100';
+	font-style: italic;
+	src: url('../fonts/Museo Sans/MuseoSans-100Italic.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'MuseoSans300';
+	src: url('../fonts/Museo Sans/MuseoSans-300.otf') format('opentype');
+}
+@font-face {
+	font-family: 'MuseoSans300';
+	font-style: italic;
+	src: url('../fonts/Museo Sans/MuseoSans-300Italic.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'MuseoSans500';
+	src: url('../fonts/Museo Sans/MuseoSans_500.otf') format('opentype');
+}
+@font-face {
+	font-family: 'MuseoSans500';
+	font-style: italic;
+	src: url('../fonts/Museo Sans/MuseoSans_500_Italic.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'MuseoSans700';
+	src: url('../fonts/Museo Sans/MuseoSans_700.otf') format('opentype');
+}
+@font-face {
+	font-family: 'MuseoSans700';
+	font-style: italic;
+	src: url('../fonts/Museo Sans/MuseoSans-700Italic.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'MuseoSans900';
+	src: url('../fonts/Museo Sans/MuseoSans_900.otf') format('opentype');
+}
+@font-face {
+	font-family: 'MuseoSans900';
+	font-style: italic;
+	src: url('../fonts/Museo Sans/MuseoSans-900Italic.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'MuseoSansRounded100';
+	src: url('../fonts/Museo Sans Rounded/exljbris - MuseoSansRounded-100.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'MuseoSansRounded300';
+	src: url('../fonts/Museo Sans Rounded/exljbris - MuseoSansRounded-300.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'MuseoSansRounded500';
+	src: url('../fonts/Museo Sans Rounded/exljbris - MuseoSansRounded-500.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'MuseoSansRounded700';
+	src: url('../fonts/Museo Sans Rounded/exljbris - MuseoSansRounded-700.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'MuseoSansRounded900';
+	src: url('../fonts/Museo Sans Rounded/exljbris - MuseoSansRounded-900.otf') format('opentype');
+}

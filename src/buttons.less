@@ -1,0 +1,70 @@
+.btn {
+	font-family: 'MuseoSansRounded700';
+	color: white;
+	font-size: 1.25rem;
+	line-height: 1.2;
+	text-decoration: none;
+	cursor: pointer;
+	margin: 1em;
+
+	&:hover,
+	&:focus {
+		color: white;
+		text-decoration: none;
+	}
+
+	display: inline-block;
+	padding: 13px 50px;
+	border-radius: 4px;
+
+	&.action,
+	&.success {
+		background-color: @green;
+
+		&:hover,
+		&:focus {
+			background-color: @light-green;
+		}
+	}
+
+	&.primary {
+		background-color: @blue;
+
+		&:hover,
+		&:focus {
+			background-color: @light-blue;
+		}
+	}
+
+	&.secondary {
+		color: @dark-gray;
+		border: solid 1px @dark-gray;
+
+		&:hover,
+		&:focus {
+			color: @light-blue;
+			border-color: @light-blue;
+		}
+	}
+
+	&.info {
+		color: @dark-gray;
+		border: solid 1px @dark-gray;
+
+		&:hover,
+		&:focus {
+			color: @red;
+			border: solid 1px @red;
+		}
+	}
+
+	&.warning,
+	&.danger {
+		background-color: @red;
+
+		&:hover,
+		&:focus {
+			background-color: @light-red;
+		}
+	}
+}
