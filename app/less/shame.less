@@ -1,0 +1,102 @@
+html, body {
+        overflow-x: hidden;
+}
+.yamm  {
+    background-color: @dark-blue;
+
+    a {
+        text-decoration: none;
+    }
+
+    img.logo {
+        height: 50px;
+    }
+
+    .navbar-header {
+        background-color: @dark-blue;
+
+        .navbar-toggle {
+            background-color: white;
+
+            &:hover,
+            &:focus {
+                background-color: @light-gray;
+            }
+
+            .icon-bar {
+                background-color: @gray;
+            }
+        }
+    }
+
+    .navbar-collapse {
+        border-color: @gray;
+        background-color: @light-gray;
+        clear: both;
+
+        .wrapper {
+        overflow-x: hidden;
+
+        position: relative;
+            &:before,
+            &:after {
+                content: " ";
+                position: absolute;
+                background: @light-gray;  /* Match the background */
+                top: 0;
+                bottom: 0;
+                width: 9999px;   /* some huge width */
+            }
+            &:before {
+                right: 100%;
+            }
+            &:after {
+                left: 100%;
+            }
+        }
+
+
+        .navbar-nav {
+            float: none;
+
+            .dropdown {
+                border-left: solid 1px @gray;
+                &:last-child {
+                    border-right: solid 1px @gray;
+                }
+
+                &:hover,
+                &:focus {
+                    background-color: white;
+                }
+
+                &.open {
+                    .dropdown-toggle {
+                        background-color: white;
+                    }
+                }
+
+                .dropdown-menu {
+                    li {
+                        &:hover,
+                        &:focus {
+                            background-color: @light-gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .yamm .navbar-collapse .wrapper {
+        overflow-x: visible;
+    }
+}
+
+ @media (max-width: @screen-sm) {
+    h1 {
+      font-size: 3em;
+    }
+  }
