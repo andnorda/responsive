@@ -49,8 +49,8 @@ module.exports = function (grunt) {
         files: ['Gruntfile.js']
       },
       styles: {
-        files: ['<%= config.app %>/styles/{,*/}*.css'],
-        tasks: ['newer:copy:styles', 'autoprefixer']
+        files: ['<%= config.app %>/styles/{,*/}*.css', '<%= config.app %>/less/**/*.less'],
+        tasks: ['less', 'newer:copy:styles', 'autoprefixer']
       },
       livereload: {
         options: {

@@ -2,14 +2,8 @@ html,
 body {
   font-family: 'MuseoSans300';
   color: #262626;
-  font-size: 80%;
+  font-size: 100%;
   line-height: 1;
-  text-align: center;
-}
-@media only screen and (min-width: 480px) {
-  html {
-    font-size: 100%;
-  }
 }
 h1,
 h2,
