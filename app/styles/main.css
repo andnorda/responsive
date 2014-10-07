@@ -168,4 +168,81 @@ footer .fa {
 footer .links {
   padding: 5px 0;
 }
+html,
+body {
+  overflow-x: hidden;
+}
+.yamm {
+  background-color: #002776;
+}
+.yamm a {
+  text-decoration: none;
+}
+.yamm img.logo {
+  height: 50px;
+}
+.yamm .navbar-header {
+  background-color: #002776;
+}
+.yamm .navbar-header .navbar-toggle {
+  background-color: white;
+}
+.yamm .navbar-header .navbar-toggle:hover,
+.yamm .navbar-header .navbar-toggle:focus {
+  background-color: #eef1f3;
+}
+.yamm .navbar-header .navbar-toggle .icon-bar {
+  background-color: #676767;
+}
+.yamm .navbar-collapse {
+  border-color: #676767;
+  background-color: #eef1f3;
+  clear: both;
+}
+.yamm .navbar-collapse .wrapper {
+  overflow-x: hidden;
+  position: relative;
+}
+.yamm .navbar-collapse .wrapper:before,
+.yamm .navbar-collapse .wrapper:after {
+  content: " ";
+  position: absolute;
+  background: #eef1f3;
+  /* Match the background */
+  top: 0;
+  bottom: 0;
+  width: 9999px;
+  /* some huge width */
+}
+.yamm .navbar-collapse .wrapper:before {
+  right: 100%;
+}
+.yamm .navbar-collapse .wrapper:after {
+  left: 100%;
+}
+.yamm .navbar-collapse .navbar-nav {
+  float: none;
+}
+.yamm .navbar-collapse .navbar-nav .dropdown {
+  border-left: solid 1px #676767;
+}
+.yamm .navbar-collapse .navbar-nav .dropdown:last-child {
+  border-right: solid 1px #676767;
+}
+.yamm .navbar-collapse .navbar-nav .dropdown:hover,
+.yamm .navbar-collapse .navbar-nav .dropdown:focus {
+  background-color: white;
+}
+.yamm .navbar-collapse .navbar-nav .dropdown.open .dropdown-toggle {
+  background-color: white;
+}
+.yamm .navbar-collapse .navbar-nav .dropdown .dropdown-menu li:hover,
+.yamm .navbar-collapse .navbar-nav .dropdown .dropdown-menu li:focus {
+  background-color: #eef1f3;
+}
+@media only screen and (min-width: 768px) {
+  .yamm .navbar-collapse .wrapper {
+    overflow-x: visible;
+  }
+}
 /*# sourceMappingURL=main.css.map */
