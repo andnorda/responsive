@@ -1,10 +1,25 @@
 @screen-sm: 768px;
 
+
+html,
+body { height: 100%; }
+ 
+body {
+  display: table;
+  width: 100%;
+}
+ 
+.page-row {
+  display: table-row;
+  height: 1px;
+}
+ 
+.page-row-expanded { height: 100%; }
+
+
 footer {
   color: white;
   background-color: @gray;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   padding: 15px 0;
   text-align: center;  

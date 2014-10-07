@@ -147,11 +147,24 @@ a:focus {
   font-family: 'MuseoSansRounded900';
   src: url('../fonts/Museo Sans Rounded/exljbris - MuseoSansRounded-900.otf') format('opentype');
 }
+html,
+body {
+  height: 100%;
+}
+body {
+  display: table;
+  width: 100%;
+}
+.page-row {
+  display: table-row;
+  height: 1px;
+}
+.page-row-expanded {
+  height: 100%;
+}
 footer {
   color: white;
   background-color: #676767;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   padding: 15px 0;
   text-align: center;
@@ -243,6 +256,11 @@ body {
 @media only screen and (min-width: 768px) {
   .yamm .navbar-collapse .wrapper {
     overflow-x: visible;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3em;
   }
 }
 /*# sourceMappingURL=main.css.map */
