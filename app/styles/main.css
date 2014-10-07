@@ -153,9 +153,19 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 10px;
-}
-footer .functions {
+  padding: 15px 0;
   text-align: center;
+}
+@media (min-width: 768px) {
+  footer .fa {
+    font-size: 30px;
+    display: block;
+  }
+}
+footer .fa {
+  padding: 0 5px 0 0;
+}
+footer .links {
+  padding: 5px 0;
 }
 /*# sourceMappingURL=main.css.map */
