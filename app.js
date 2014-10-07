@@ -5,5 +5,6 @@ var path = require('path');
 //app.use(express.static(__dirname)); // Current directory is root
 app.use(express.static(path.join(__dirname, 'dist'))); //  "public" off of current is root
 
-app.listen(80);
-console.log('Listening on port 80');
+var port = process.env.PORT || 3000;
+app.listen(port);
+console.log('Listening on port ' + port);
