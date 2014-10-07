@@ -30,7 +30,7 @@
 <div class="navbar yamm navbar-default">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle collapsed"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#"><img class="logo" src="images/Sparebank2.png"></a>
+            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle collapsed"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/index.html"><img class="logo" src="images/Sparebank2.png"></a>
         </div>
         <div id="navbar-collapse-1" class="navbar-collapse collapse" style="height: 1px;">
             <div class="wrapper">
@@ -38,7 +38,7 @@
                     <!-- Classic dropdown -->
                     <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Kontoer</a>
                 <ul role="menu" class="dropdown-menu">
-                    <li><a tabindex="-1" href="#">Kontobevegelser</a></li>
+                    <li><a tabindex="-1" href="/kontobevegelser.html">Kontobevegelser</a></li>
                     <li><a tabindex="-1" href="#">Kontooversikt</a></li>
                     <li><a tabindex="-1" href="#">Kontodetaljer</a></li>
                     <li><a tabindex="-1" href="#">Årsoppgave</a></li>
@@ -52,7 +52,7 @@
                 <!-- Classic dropdown -->
                 <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Betaling</a>
             <ul role="menu" class="dropdown-menu">
-                <li><a tabindex="-1" href="#">Betale regninger</a></li>
+                <li><a tabindex="-1" href="/betale.html">Betale regninger</a></li>
                 <li><a tabindex="-1" href="#">Overføre mellom egne kontoer</a></li>
                 <li><a tabindex="-1" href="#">Overføre fra kredittkort til konto</a></li>
                 <li><a tabindex="-1" href="#">Betale regninger utland</a></li>
@@ -106,53 +106,64 @@
     </div>
 </div>
 </header>
-  <body>
-      <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-<div class="page-row page-row-expanded">
-    <div class="row">
-        <div class="container">
-            <div class="col-md-8">
-                <div class="information">
-                    <h3>Sparebank2 fremtidens bank</h3>
-                    <p>
-                        Sparebank2 er en ny bank der vi arbeider sammen en felles organisasjon, løsning, prosesser og metodikker. Dette trur vi på fordi vi vil at kunden skal ha oppleve oss som en bank..
-                        <a href="#" class="link">Les mer..</a>
-                    </p>
-                </div>
-            </div>
-            
-             <form role="form" class="col-md-4 login information" action="http://localhost:9000/">
-                <div class="form-group">
-                    <h4>Loggin nettbank</h1>
-                    <input type="text" class="form-control" id="logginId" placeholder="Skriv inn bruker-ID">
 
-                </div>
-                <div class="form-group">
-                    <input type="submit" class="btn btn-default" value="Login"/>
-                </div>
-            </form>
-            
-                <div class="col-md-8">
-                    <img src="images/laan.png" alt="Søk om lån for unge"/>
-                </div>
-            </div>
+<div class="page-row page-row-expanded">
+    <div class="container">
+        <h1 class="header">Betale regninger</h1>
+        <form role="form">
+          <div class="form-group col-sm-6">
+            <label for="fromAccount">Fra konto</label>
+            <input type="text" class="form-control" id="fromAccount" placeholder="Søk">
+        </div>
+        <div class="form-group col-sm-6">
+            <label for="toAccount">Til konto</label>
+            <input type="text" class="form-control" id="toAccount" placeholder="Søk">
+        </div>
+        <div class="form-group col-sm-12">
+            <label for="kidOrMessage">KID eller melding</label>
+            <input type="text" class="form-control" id="kidOrMessage" placeholder="">
+        </div>
+        <div class="form-group col-sm-6">
+            <label for="dueDate">Forfallsdato (dd.mm.åååå)</label>
+            <input type="text" class="form-control" id="dueDate" placeholder="07.10.2014">
+        </div>
+        <div class="form-group col-sm-4 col-xs-8">
+            <label for="amount">Kroner</label>
+            <input type="text" class="form-control" id="amount" placeholder="">
+        </div>
+        <div class="form-group col-sm-2 col-xs-4">
+            <label for="smallAmount">Øre</label>
+            <input type="text" class="form-control" id="smallAmount" placeholder="00">
+        </div>  
+        <div class="form-group col-sm-3 col-xs-4">
+            <button type="submit" class="btn btn-default">Betal regning</button>
+          </div>
+            <div class="form-group col-sm-9 col-xs-8">
+            <a href="#" onclick="cancelPayment()">Avbryt betaling</a>
+          </div>
+        </form>
+
+        <div class="hidden" id="paymentResult">
+          <div class="form-group col-sm-12">
+            <label id="paymentResultLabel">Betaling fra konto '{0}' er betalt til konto '{1}', sum {2},{3} den {4}</label>
+          </div>
         </div>
     </div>
-      
-      <footer class="page-row">
-      <div class="col-sm-4 col-xs-12">
+  </div>
+
+    <footer class="page-row">
+      <div class="footer-column col-sm-4 col-xs-12">
         <div class="links">Om Sparebank1</div>        
         <div class="links">Pressesenter</div> 
         <div class="links">Investor Relations</div>
       </div>
-      <div class="functions col-sm-4 col-xs-12">
+      <div class="functions footer-column  col-sm-4 col-xs-12">
         <div class="contact-function links col-sm-4"><span class="fa fa-phone"></span><span class="functions-text">Kontakt</span></div>
         <div class="contact-function links col-sm-4"><span class="fa fa-weixin"></span><span class="functions-text">Chat</span></div>
         <div class="contact-function links col-sm-4"><span class="fa fa-question"></span><span class="functions-text">Hjelp</span></div>
       </div>
-      <div class="links col-sm-4 col-xs-12">Eiendomsmegler 1</div>
+      <div class="footer-column col-sm-4 col-xs-12">
+        <div class="links">Eiendomsmegler 1</div></div>
     </footer>
 
 
@@ -195,4 +206,3 @@ $(function() {
 </script>
 </body>
 </html>
-
