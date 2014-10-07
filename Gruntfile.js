@@ -64,6 +64,18 @@ module.exports = function (grunt) {
       }
     },
 
+    less: {
+        development: {
+            options: {
+                sourceMap: true,
+                sourceMapURL: 'main.css.map',
+                sourceMapFilename: '<%= config.app %>/main.css.map'
+            },
+            src: '<%= config.app %>/less/main.less',
+            dest: '<%= config.app %>/styles/main.css'
+        }
+    },
+
     // The actual grunt server settings
     connect: {
       options: {
@@ -385,6 +397,7 @@ module.exports = function (grunt) {
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
+    'less',
     'autoprefixer',
     'concat',
     'cssmin',
